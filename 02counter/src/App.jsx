@@ -15,7 +15,7 @@ function App() {
  }
   return (
     <>
-     <h1>react course with chioma {counter} </h1>
+     <h1>react course with me {counter} </h1>
      <h2>counter value: {counter}</h2>
      <button onClick={addValue} >Add value {counter}</button>{" "}
      <button onClick={removevalue}>Remove value {counter}</button>
