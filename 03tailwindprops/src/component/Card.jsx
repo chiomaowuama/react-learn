@@ -1,6 +1,6 @@
 import React from 'react'
 
- function Card({username="HC" , post="not recorded yet"}) {
+ function Card({username= "HC", post="not recorded yet"}) {
     // console.log()
   return (
 
