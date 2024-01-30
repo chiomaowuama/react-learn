@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-     
+     <h1 className='border-green-900 border-2'>hello css and react ready</h1>
     </>
   )
 }
