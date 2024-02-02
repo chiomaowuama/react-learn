@@ -15,7 +15,7 @@ function App() {
       <h1>React video for context api</h1>
      <Login />
       <Profile />
-    </UserContextProvider>
+    </UserContextProvider >
   )
 }
 
