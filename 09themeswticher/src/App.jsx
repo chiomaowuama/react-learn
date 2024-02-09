@@ -2,9 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Card from './components/Card'
-import ThemeBtn from './components/ThemeBtn'
-import { ThemeProvider } from './contexts/theme'
+import Card from './component/Card'
+import ThemeBtn from './component/ThemeBtn'
+import { ThemeProvider } from './context/theme'
 import { useEffect } from 'react'
 
 function App() {
