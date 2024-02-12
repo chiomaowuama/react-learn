@@ -6,13 +6,13 @@ import useCurrencyInfo from './hooks/useCurrencyInfo'
 import {InputBox} from './components/index.js'
 
 function App() {
-  const [amount, setAmount] = useState(0)
-  const [from, setFrom] = useState('usd')
-  const [to, setTo] = useState('inr')
-  const [convertedAmount, setConvertedAmount] = useState(0)
+  const [amount, setAmount] = useState(0)     //this is any amount the person put in the inpute box
+  const [from, setFrom] = useState('usd')   // this is what ever currency the person chooses convert from
+  const [to, setTo] = useState('inr')       // this iswhat ever currency the person is converting to 
+  const [convertedAmount, setConvertedAmount] = useState(0)  //this is the amount theconverted currency becomes 
 
-  const currencyInfo = useCurrencyInfo(from)
-  const options = Object.keys(currencyInfo)
+  const currencyInfo = useCurrencyInfo(from)  // this uses the api responds and stored it in currency info
+  const options = Object.keys(currencyInfo)   //this looks into the res from the api and picks the keys and stores in options
 
   const swap = () => {
     setFrom(to)
@@ -21,7 +21,7 @@ function App() {
     setAmount(convertedAmount)
   }
 
-  const convert = () => {
+  const convert = () => {    //this function tahes the amount base on the currency the person puts, the currency the pweson chooses to convert to  and multiplies it
     setConvertedAmount(amount * currencyInfo[to])
   }
 
