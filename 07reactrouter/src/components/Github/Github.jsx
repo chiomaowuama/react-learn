@@ -9,11 +9,11 @@ function Github() {
     console.log(data.avatar_url)
     // const [data, setData] = React.useState([])
     // useEffect(() => {
-    //     fetch('https://api.github.com/users/hiteshchoudhary')
-    //     .then((response) => response.json())
-    //     .then(data => {
-    //         setData(data)
-    //     })
+    //   fetch('https://api.github.com/users/hiteshchoudhary')
+    //   .then((response) => response.json())
+    //   .then(data => {
+    //       setData(data)
+    //   })
     // }, [])
 
   return (
