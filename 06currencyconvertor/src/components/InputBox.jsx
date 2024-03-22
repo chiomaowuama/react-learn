@@ -24,7 +24,7 @@ function InputBox({
             placeholder='Amount'
             disabled={amountDisabled}
             value={amount}
-            onChange={(e) => onAmountChange && onAmountChange(Number(e.target.value))}
+            onChange={(e) => onAmountChange && onAmountChange(Number(e.target.value))}  //the on change is used to track the input for anychange the onAmountchange is frist checked by the double and operator to make sure it has a value then once it does it will then target the value to be used 
              />
         </div>
         <div className='w-1/2 flex flex-wrap justify-end text-right'>
